@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI_ASSISTANT</title>
+</head>
+<body>
+    <form action="http://192.168.43.226/cgi-bin/tg9.py">
+        <b>MENU PROGRAM</b></br>
+        <input value="date" name="inp1" type="radio">1. run date command</br>
+        <input value="cal" name="inp1" type="radio">2. run cal command</br>
+        <input value="ifconfig" name="inp1" type="radio">3. run ifconfig command</br>
+        <input value="whoami" name="inp1" type="radio">4. view current user of this os</br>
+        <input value="pwd" name="inp1" type="radio">5. get your present working directory</br>
+        <input value="tty" name="inp1" type="radio">6. view your terminal name</br>
+        <input value="echo $SHELL" name="inp1" type="radio">7. know your type of shell</br>
+        <input value="jobs" name="inp1" type="radio">9. see if any process is running in background</br>
+        <input value="history" name="inp1" type="radio">10. run history command</br>
+        <input value="ls" name="inp1" type="radio">11. list all files and folders in the present directory</br>
+        <input value="free -m" name="inp1" type="radio">12. view status of RAM</br>
+        <input value="df -h" name="inp1" type="radio">13. view main storage folders and where they are mounted</br>
+        <input value="lscpu" name="inp1" type="radio">14. view information about CPU</br>
+        <input value="sudo fdisk -l" name="inp1" type="radio">15. view all the storage devices</br>
+        <input value="netstat -tnlp" name="inp1" type="radio">16. view all working port in our system</br>
+        <input value="ps -aux" name="inp1" type="radio">17. view all active/running process on the system </br>
+        <input value="route -n" name="inp1" type="radio">18. view all ips thier routing points and gateways</br>
+        <input type="submit"></br></br>
+    </form>
+    <b> DOCKER SERVICE</b></br>
+    <form action="http://192.168.43.226/cgi-bin/td9.py">
+            <input value="rpm -q docker-ce" name="inp" type="radio" >1. view name of docker sofware installed</br>
+            <input value="systemctl status docker" name="inp" type="radio">2. View status of docker service</br>
+            <input value="sudo systemctl start docker" name="inp" type="radio">3. Start docker service</br>
+            <input value="sudo docker info" name=inp type="radio">4. view detialed infomation about docker</br>
+            <input value="sudo systemctl stop docker" type="radio" name="inp">5. Stop docker service</br>
+            <input value="sudo docker images" type="radio" name="inp">6. show all the docker images present in system</br>
+            <input value="sudo docker ps" name="inp" type="radio" >7. show all the containers in running state</br>
+            <input value="sudo docker ps -a" name="inp" type="radio">8. show all container in stopped state</br>
+            <input value="sudo docker rm $(docker ps -qa)" name="inp" type="radio">9. remove all stopped contiainer</br>
+            <input value='10' name='inp1' type='radio'>10. Pull the image from docker.hub</br>
+            Enter the name of image you want to pull - <input name="img" type="text"></br></br>
+            <input value='11' name='inp1' type='radio'>11. Launch a docker container</br>
+              Enter the name of contianer - <input name="name" type="text"></br>
+              Enter name of image - <input name="imgdoc" type="text"> </br></br>
+            <input value='12' name='inp1' type='radio'>12.Stop a running contianer</br>
+            Enter name/ID of contianer - <input name="name" type="text"></br>
+            <input type="submit"></br>
+    </form>
+</body>
+</html>
+ 
